@@ -129,13 +129,13 @@
 		807BE9202140381D00E25FEA /* flix */ = {
 			isa = PBXGroup;
 			children = (
+				C2ADFF5D214C1887001DEC07 /* MovieCell.swift */,
 				C203297C214B8FD400258A3F /* NowPlayingViewController.swift */,
 				807BE9212140381D00E25FEA /* AppDelegate.swift */,
 				807BE9252140381D00E25FEA /* Main.storyboard */,
 				807BE9282140381D00E25FEA /* Assets.xcassets */,
 				807BE92A2140381D00E25FEA /* LaunchScreen.storyboard */,
 				807BE92D2140381D00E25FEA /* Info.plist */,
-				C2ADFF5D214C1887001DEC07 /* MovieCell.swift */,
 			);
 			path = flix;
 			sourceTree = "<group>";
@@ -179,6 +179,7 @@
 				807BE91A2140381D00E25FEA /* Sources */,
 				807BE91B2140381D00E25FEA /* Frameworks */,
 				807BE91C2140381D00E25FEA /* Resources */,
+				94059C505210EA68E749E3CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,6 +336,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94059C505210EA68E749E3CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-flix/Pods-flix-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-flix/Pods-flix-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A45FD8BAC085934B6C57FF1F /* [CP] Check Pods Manifest.lock */ = {
