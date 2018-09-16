@@ -21,6 +21,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         
         super.viewDidLoad()
         
+        activityIndicator.startAnimating()
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector (NowPlayingViewController.didPullToRefresh(_:)), for: . valueChanged)
         tableView.insertSubview(refreshControl, at: 0)
@@ -30,7 +31,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     }
     
     @objc func didPullToRefresh(_ refreshControl: UIRefreshControl) {
-        activityIndicator.startAnimating()
+        
         fetchMovies()
         
     }
@@ -51,9 +52,10 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
                 self.movies = movies
                 self.tableView.reloadData()
                 self.refreshControl.endRefreshing()
-                self.activityIndicator.stopAnimating()
+                
                 
             }
+            self.activityIndicator.stopAnimating()
         }
         task.resume()
         
