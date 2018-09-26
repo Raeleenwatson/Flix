@@ -117,37 +117,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j70-WI-Im4">
-                                <rect key="frame" x="0.0" y="64.000000000000014" width="414" height="245.33333333333337"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j70-WI-Im4">
+                                <rect key="frame" x="0.0" y="64" width="414" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="0kb-7U-ZMG"/>
+                                    <constraint firstAttribute="width" constant="414" id="qkA-38-Krt"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EMf-DJ-u1h">
-                                <rect key="frame" x="9" y="225" width="136" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EMf-DJ-u1h">
+                                <rect key="frame" x="9" y="144" width="115" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="2T2-0h-Fjf"/>
+                                    <constraint firstAttribute="width" constant="115" id="U6z-4d-km9"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wonder Woman" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMm-7A-A5d">
-                                <rect key="frame" x="153" y="338" width="250" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wonder Woman" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMm-7A-A5d">
+                                <rect key="frame" x="132" y="239" width="274" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfi-z0-MHX">
-                                <rect key="frame" x="20" y="567" width="374" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wF3-MY-PmY">
+                                <rect key="frame" x="132" y="280" width="274" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfi-z0-MHX">
+                                <rect key="frame" x="20" y="308" width="374" height="21.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wF3-MY-PmY">
-                                <rect key="frame" x="153" y="386" width="241" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j70-WI-Im4" firstAttribute="trailing" secondItem="Og7-PE-SFO" secondAttribute="trailing" id="DeC-Ha-b4I"/>
+                            <constraint firstItem="Og7-PE-SFO" firstAttribute="trailing" secondItem="yMm-7A-A5d" secondAttribute="trailing" constant="8" id="F5i-eW-Glq"/>
+                            <constraint firstItem="j70-WI-Im4" firstAttribute="leading" secondItem="Og7-PE-SFO" secondAttribute="leading" id="LBk-6f-pJy"/>
+                            <constraint firstItem="Og7-PE-SFO" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Vfi-z0-MHX" secondAttribute="bottom" constant="8" id="Rbr-Y2-sgJ"/>
+                            <constraint firstItem="EMf-DJ-u1h" firstAttribute="leading" secondItem="Og7-PE-SFO" secondAttribute="leading" constant="9" id="Urf-Ny-lSx"/>
+                            <constraint firstItem="yMm-7A-A5d" firstAttribute="top" secondItem="j70-WI-Im4" secondAttribute="bottom" constant="15" id="VNw-GR-wJX"/>
+                            <constraint firstItem="Og7-PE-SFO" firstAttribute="trailing" secondItem="Vfi-z0-MHX" secondAttribute="trailing" constant="20" id="Xt1-wE-PKy"/>
+                            <constraint firstItem="wF3-MY-PmY" firstAttribute="top" secondItem="yMm-7A-A5d" secondAttribute="bottom" constant="20.670000000000002" id="Xu9-Yu-I1q"/>
+                            <constraint firstItem="wF3-MY-PmY" firstAttribute="leading" secondItem="EMf-DJ-u1h" secondAttribute="trailing" constant="8" id="dXD-oG-BZU"/>
+                            <constraint firstItem="yMm-7A-A5d" firstAttribute="leading" secondItem="EMf-DJ-u1h" secondAttribute="trailing" constant="8" id="fuo-pT-Y5D"/>
+                            <constraint firstItem="j70-WI-Im4" firstAttribute="top" secondItem="Og7-PE-SFO" secondAttribute="top" id="iXs-xd-nru"/>
+                            <constraint firstItem="Og7-PE-SFO" firstAttribute="trailing" secondItem="wF3-MY-PmY" secondAttribute="trailing" constant="8" id="ohx-CF-x2t"/>
+                            <constraint firstItem="EMf-DJ-u1h" firstAttribute="top" secondItem="Og7-PE-SFO" secondAttribute="top" constant="80" id="os0-qX-7en"/>
+                            <constraint firstItem="Vfi-z0-MHX" firstAttribute="leading" secondItem="Og7-PE-SFO" secondAttribute="leading" constant="20" id="taR-Tg-3GN"/>
+                            <constraint firstItem="Vfi-z0-MHX" firstAttribute="top" secondItem="wF3-MY-PmY" secondAttribute="bottom" constant="8" id="uzq-8V-MFx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Og7-PE-SFO"/>
                     </view>
                     <connections>
