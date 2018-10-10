@@ -48,16 +48,16 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         }
 
         
-//        MovieApiManager().popularMovies{ (movies: [Movie]?, error: Error?) in
-//            if let movies = movies {
-//                self.movies = movies
-//                self.tableView.reloadData()
-//                self.refreshControl.endRefreshing()
-//
-//            }
-//            self.activityIndicator.stopAnimating()
-//
-//        }
+        MovieApiManager().popularMovies{ (movies: [Movie]?, error: Error?) in
+            if let movies = movies {
+                self.movies = movies
+                self.tableView.reloadData()
+                self.refreshControl.endRefreshing()
+
+            }
+            self.activityIndicator.stopAnimating()
+
+        }
     }
     
     
